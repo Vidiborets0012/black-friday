@@ -19,3 +19,39 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ********** HEADER ********** */
+
+.header {
+  padding-top: 50px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list {
+  width: 715px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list-link {
+  transition: font-weight 0.5s ease-in-out;
+}
+
+.menu-list-link:hover {
+  font-weight: 600;
+  color: #ffe251;
+}
