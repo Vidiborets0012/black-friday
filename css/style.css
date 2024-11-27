@@ -37,17 +37,21 @@ a {
   padding-top: 50px;
   margin-bottom: 90px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.menu-list {
+.menu {
   width: 715px;
+  margin-left: auto;
+}
+
+.menu-list {
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
 }
 
 .menu-list-link {
+  line-height: 22px;
   transition: font-weight 0.5s ease-in-out;
 }
 
@@ -55,3 +59,5 @@ a {
   font-weight: 600;
   color: #ffe251;
 }
+
+/* ********** HERO ********** */
