@@ -69,10 +69,15 @@ p {
 /* ********** HERO ********** */
 
 .hero {
-  background-image: url('../images/hero-gift.svg'), url(../images/hero-promotion.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: right 28px center, left 395px top 85px;
+  position: relative;
+  background-image: url('../images/hero-gift.svg');
+  background-repeat: no-repeat;
+  background-position: right 28px center;
   margin-bottom: 170px;
+
+  /* background-image: url('../images/hero-gift.svg'), url(../images/hero-promotion.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 28px center, left 395px top 85px; */
 }
 
 .hero-title {
@@ -83,6 +88,12 @@ p {
   width: 431px;
   height: 200px;
   margin-bottom: 24px;
+}
+
+.hero-promotion {
+  position: absolute;
+  left: 395px;
+  top: 87px;
 }
 
 .hero-title-bottom {
