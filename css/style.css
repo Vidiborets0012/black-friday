@@ -185,46 +185,55 @@ p {
   margin-bottom: 70px;
 }
 
-.benefits-inner {
+.benefits-items {
   display: flex;
   justify-content: space-between;
 }
 
 .benefits-item {
-  border-radius: 20px;
-  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15);
   width: 270px;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 30px 12px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 150px 12px 30px;
   text-align: center;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
+  background-size: 0, 100px 100px;
+  background-repeat: no-repeat;
+  background-position: top 30px center;
+}
+
+.find {
+  background-image: url('../images/benefits-ellips-bg.svg'), url('../images/benefits-bg-1.svg');
+}
+
+.money {
+  background-image: url('../images/benefits-ellips-bg.svg'), url('../images/benefits-bg-2.svg');
+}
+
+.world {
+  background-image: url('../images/benefits-ellips-bg.svg'), url('../images/benefits-bg-3.svg');
+}
+
+.home {
+  background-image: url('../images/benefits-ellips-bg.svg'), url('../images/benefits-bg-4.svg');
 }
 
 .benefits-item:hover {
+  background-size: 100px 100px, 100px 100px;
   background-color: #f03131;
 }
 
-.benefits-img-inner {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #f03131;
-  margin: 0 auto 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.benefits-subtitle {
+.benefits-item-subtitle {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.3;
   margin-bottom: 20px;
 }
 
-.benefits-text {
+.benefits-item-text {
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 /* ********** specialties ********** */
