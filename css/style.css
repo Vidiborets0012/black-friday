@@ -376,3 +376,69 @@ p {
 .specialties-link:hover {
   background-color: #e50103;
 }
+
+/* ********** consultations ********** */
+
+.consultations {
+  background-image: url('../images/cons-bg.svg');
+  background-repeat: no-repeat;
+  /* background-size: 602px 468px; */
+  background-position: right 79px top 88px;
+}
+
+.consultation-title {
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.consultation-title-accent {
+  color: #ffd000;
+}
+
+.consultations-form {
+  width: 415px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.consultations-form-input {
+  padding: 22px 10px 22px 27px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1000px;
+  outline: none;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #fff;
+  opacity: 0.5;
+}
+
+/* .input-name {
+  padding: 22px 10px 22px 27px;
+}
+
+.input-tel {
+} */
+
+/* .consultations-form-input::placeholder {
+} */
+
+.consultations-form-btn {
+  border: 2px solid #e50103;
+  border-radius: 1000px;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.4;
+  /* text-align: center; */
+  color: #fff;
+  padding: 17px 17px 19px;
+  margin-bottom: 365px;
+}
