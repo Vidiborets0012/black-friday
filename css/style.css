@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
   margin: 0;
@@ -368,8 +372,8 @@ footer {
 
 small {
   display: block;
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: 13px;
+  line-height: 14px;
 }
 
 .footer-contacts {
@@ -432,4 +436,13 @@ small {
 
 .telegram {
   background-image: url('../images/social-telegram.svg');
+}
+
+.arrow-to-top {
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  margin-top: 74px;
+  display: block;
+  background-image: url(../images/footer-arrow.svg);
 }
