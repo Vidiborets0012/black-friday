@@ -34,6 +34,7 @@ a {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -75,10 +76,6 @@ p {
   background-repeat: no-repeat;
   background-position: right 28px center;
   margin-bottom: 170px;
-
-  /* background-image: url('../images/hero-gift.svg'), url(../images/hero-promotion.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: right 28px center, left 395px top 85px; */
 }
 
 .hero-title {
@@ -333,4 +330,106 @@ p {
 
 .specialties-btn:hover {
   background-color: #e50103;
+}
+
+/* ********** footer ********** */
+
+footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  padding: 50px 0;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.common-information {
+  width: 308px;
+}
+
+.common-information .logo {
+  margin-bottom: 30px;
+}
+
+.footer-text {
+  font-style: 20px;
+  margin-bottom: 76px;
+}
+
+small {
+  display: block;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.footer-contacts {
+  width: 286px;
+}
+
+.contacts-link {
+  display: block;
+  background-repeat: no-repeat;
+  padding: 5px 0 5px 50px;
+  margin-bottom: 14px;
+}
+
+.tel {
+  background-image: url('../images/footer-phone.svg');
+}
+
+.site {
+  background-image: url('../images/footer-www.svg');
+}
+
+.tg {
+  background-image: url('../images/footer-la_telegram.svg');
+}
+
+.email {
+  background-image: url('../images/footer-mail.svg');
+}
+
+.footer-social {
+  width: 256px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.instagram {
+  background-image: url('../images/social-instagram.svg');
+}
+
+.facebook {
+  background-image: url('../images/social-facebook.svg');
+}
+
+.youtube {
+  background-image: url('../images/social-youtube.svg');
+}
+
+.linkedin {
+  background-image: url('../images/social-linkedin.svg');
+}
+
+.telegram {
+  background-image: url('../images/social-telegram.svg');
 }
