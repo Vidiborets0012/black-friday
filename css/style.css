@@ -380,10 +380,10 @@ p {
 /* ********** consultations ********** */
 
 .consultations {
-  background-image: url('../images/cons-bg.svg');
+  background-image: url('../images/cons-arrow-ellow.svg'), url('../images/cons-arrow-red.svg'),
+    url('../images/cons-bg.svg');
   background-repeat: no-repeat;
-  /* background-size: 602px 468px; */
-  background-position: right 79px top 88px;
+  background-position: center bottom 74px, center bottom 14px, right 79px top 88px;
 }
 
 .consultation-title {
@@ -403,6 +403,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  margin-bottom: 693px;
 }
 
 .consultations-form-input {
