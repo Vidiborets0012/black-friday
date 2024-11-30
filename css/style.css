@@ -68,7 +68,7 @@ p {
 }
 
 .menu-list-link:hover {
-  font-weight: 600;
+  /* font-weight: 600; */
   color: #ffe251;
 }
 
@@ -362,7 +362,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  margin-bottom: 693px;
+  padding-bottom: 365px;
 }
 
 .consultations-form-input {
@@ -379,16 +379,6 @@ p {
   opacity: 0.5;
 }
 
-/* .input-name {
-  padding: 22px 10px 22px 27px;
-}
-
-.input-tel {
-} */
-
-/* .consultations-form-input::placeholder {
-} */
-
 .consultations-form-btn {
   border: 2px solid #e50103;
   border-radius: 1000px;
@@ -400,7 +390,7 @@ p {
   /* text-align: center; */
   color: #fff;
   padding: 17px 17px 19px;
-  margin-bottom: 365px;
+  /* margin-bottom: 365px; */
 }
 
 /* ********** footer ********** */
@@ -513,5 +503,3 @@ small {
   display: block;
   background-image: url(../images/footer-arrow.svg);
 }
-
-
