@@ -150,6 +150,10 @@ p {
   transition: 0.5s ease-in-out;
 }
 
+.hero-suggestion-link {
+  color: #ffffff;
+}
+
 .frontend {
   background-image: url('../images/frontend.svg');
 }
