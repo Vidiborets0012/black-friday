@@ -513,3 +513,27 @@ small {
   display: block;
   background-image: url(../images/footer-arrow.svg);
 }
+
+@media screen and (max-width: 980px) {
+  .menu-list {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .menu-list {
+    width: 380px;
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+  .menu-list-link {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-list {
+    width: 360px;
+  }
+}
