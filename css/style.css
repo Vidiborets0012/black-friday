@@ -85,11 +85,26 @@ p {
 /* ********** HERO ********** */
 
 .hero {
+  margin-bottom: 170px;
+}
+
+.hero-inner {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left-box {
+  width: 50%;
+}
+
+.hero-bg-box {
+  width: 50%;
+  min-height: 487px;
   background-image: url('../images/hero-gift.svg');
   background-repeat: no-repeat;
   background-position: right 28px center;
-  margin-bottom: 170px;
 }
 
 .hero-title {
@@ -102,15 +117,24 @@ p {
   margin-bottom: 24px;
 }
 
-.hero-promotion {
-  position: absolute;
-  left: 395px;
-  top: 87px;
-}
-
 .hero-title-bottom {
+  position: relative;
   font-size: 106px;
   line-height: 0.8;
+}
+
+.hero-title-bottom::after {
+  content: '';
+  display: block;
+  width: 227px;
+  height: 194px;
+  background-image: url('../images/hero-promotion.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10px;
+  left: 384px;
 }
 
 .hero-text {
