@@ -537,3 +537,42 @@ small {
     width: 360px;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .menu-btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .btn-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+    transition: 0.3s ease;
+  }
+
+  .btn-line:nth-child(1) {
+    top: 0;
+  }
+
+  .btn-line:nth-child(2) {
+    top: 15px;
+  }
+
+  .btn-line:nth-child(3) {
+    top: 15px;
+  }
+
+  .btn-line:nth-child(4) {
+    top: 30px;
+  }
+}
