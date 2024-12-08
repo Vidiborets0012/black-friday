@@ -12,9 +12,6 @@ body {
   background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.4;
   color: #ffffff;
 }
 
@@ -32,7 +29,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 h1,
@@ -46,30 +42,44 @@ p {
 /* ********** HEADER ********** */
 
 .header {
-  padding-top: 50px;
-  margin-bottom: 90px;
-  display: flex;
-  align-items: center;
+  padding-top: 37px;
+  margin-bottom: 73px;
 }
 
-.menu {
-  width: 715px;
-  margin-left: auto;
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
 }
 
 .menu-list {
   display: flex;
+  justify-content: space-between;
   gap: 40px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 .menu-list-link {
-  line-height: 22px;
-  transition: font-weight 0.5s ease-in-out;
+  padding: 4px;
+  color: #ffffff;
 }
 
+.menu-list,
+.menu-list-link {
+  transition: font-weight 0.3s ease-in, color 0.4s ease-in;
+}
+
+.menu-list:hover,
 .menu-list-link:hover {
-  /* font-weight: 600; */
+  font-weight: 600;
   color: #ffe251;
+}
+
+.menu-btn {
+  display: none;
 }
 
 /* ********** HERO ********** */
