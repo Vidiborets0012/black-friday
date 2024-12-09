@@ -542,6 +542,15 @@ small {
   background-image: url(../images/footer-arrow.svg);
 }
 
+@media screen and (max-width: 1200px) {
+  .benefits-items {
+    width: 580px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .hero-inner {
     flex-direction: column;
@@ -571,6 +580,12 @@ small {
 @media screen and (max-width: 980px) {
   .menu-list {
     gap: 30px;
+  }
+
+  .sections-title {
+    width: 580px;
+    line-height: 1;
+    margin: 0 auto 70px;
   }
 }
 
@@ -709,6 +724,19 @@ small {
     line-height: 28px;
     padding: 10px 0 10px 52px;
   }
+
+  /* ******* benefits ******* */
+
+  .benefits-items {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sections-title {
+    width: 426px;
+    font-size: 60px;
+    margin: 0 auto 56px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -749,5 +777,10 @@ small {
 
   .hero-suggestion-list {
     row-gap: 28px;
+  }
+
+  .sections-title {
+    width: 290px;
+    font-size: 36px;
   }
 }
