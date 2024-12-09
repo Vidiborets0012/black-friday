@@ -549,6 +549,11 @@ small {
     flex-wrap: wrap;
     gap: 30px;
   }
+
+  .specialties-items {
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -610,6 +615,10 @@ small {
 @media screen and (max-width: 768px) {
   .menu-list {
     width: 360px;
+  }
+
+  .special-title {
+    font-size: 60px;
   }
 }
 
@@ -737,6 +746,10 @@ small {
     font-size: 60px;
     margin: 0 auto 56px;
   }
+
+  .special-title {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -782,5 +795,22 @@ small {
   .sections-title {
     width: 290px;
     font-size: 36px;
+  }
+
+  .special-title {
+    font-size: 32px;
+  }
+
+  .specialties-item {
+    width: 290px;
+    padding: 15px 12px 30px;
+  }
+
+  .specialties-subtitle {
+    font-size: 32px;
+  }
+
+  .specialties-item p {
+    font-size: 18px;
   }
 }
