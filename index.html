@@ -218,11 +218,26 @@
         Отримай <span class="consultation-title-accent">безкоштовну</span> консультацію
       </h2>
 
-      <form class="consultations-form" action="">
-        <input class="consultations-form-input input-name" type="text" placeholder="Імʼя" />
-        <input class="consultations-form-input input-tel" type="text" placeholder="+380" />
+      <form class="consultation-form" name="get_consultation_form" autocomplete="off" novalidate>
+        <label for="username" hidden>username</label>
+        <input
+          class="consultations-form-input"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Імʼя"
+        />
 
-        <button class="consultations-form-btn" type="submit">Отримати консультацію</button>
+        <label for="phone" hidden>Phone number</label>
+        <input
+          class="consultations-form-input input-tel"
+          type="tel"
+          name="contact_tel"
+          id="phone"
+          placeholder="+380"
+        />
+
+        <button class="consultation-form-btn" type="submit">Отримати консультацію</button>
       </form>
     </section>
 
