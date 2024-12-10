@@ -409,7 +409,19 @@ p {
   border-radius: 1000px;
   outline: none;
   border: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.input-tel {
+  width: 100%;
+  padding-left: 87px;
+}
+
+input::placeholder {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.4;
@@ -418,17 +430,18 @@ p {
 }
 
 .consultations-form-btn {
-  border: 2px solid #e50103;
-  border-radius: 1000px;
-  background-color: transparent;
-  font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.4;
-  /* text-align: center; */
-  color: #fff;
+  text-align: center;
+  border: none;
+  border: 2px solid #e50103;
+  border-radius: 1000px;
+  background-color: transparent;
+  color: currentColor;
   padding: 17px 17px 19px;
-  /* margin-bottom: 365px; */
+  margin: 0;
 }
 
 /* ********** footer ********** */
