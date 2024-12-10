@@ -218,11 +218,44 @@
         Отримай <span class="consultation-title-accent">безкоштовну</span> консультацію
       </h2>
 
-      <form class="consultations-form" action="">
-        <input class="consultations-form-input input-name" type="text" placeholder="Імʼя" />
-        <input class="consultations-form-input input-tel" type="text" placeholder="+380" />
+      <form class="consultation-form" name="get_consultation_form" autocomplete="off" novalidate>
+        <label for="username" hidden>username</label>
+        <input
+          class="consultations-form-input"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Імʼя"
+        />
 
-        <button class="consultations-form-btn" type="submit">Отримати консультацію</button>
+        <label for="phone" hidden>Phone number</label>
+
+        <div class="phone-select-container">
+          <div class="select">
+            <button class="select-btn">
+              <img class="select-btn-img" src="images/flag-ukraine.svg" alt="ukraine" />
+              <img class="arrow" src="images/select_arrow-down.svg" alt="Arrow" />
+            </button>
+            <ul class="dropdown">
+              <li data-value="+380" data-img="images/flag-ukraine.svg">
+                <img src="images/flag-ukraine.svg" alt="Ukraine" />
+              </li>
+              <li data-value="+44" data-img="images/flag-uk.svg">
+                <img src="images/flag-uk.svg" alt="UK" />
+              </li>
+            </ul>
+          </div>
+
+          <input
+            class="consultations-form-input input-tel"
+            type="tel"
+            name="contact_tel"
+            id="phone"
+            placeholder="+380"
+          />
+        </div>
+
+        <button class="consultation-form-btn" type="submit">Отримати консультацію</button>
       </form>
     </section>
 
