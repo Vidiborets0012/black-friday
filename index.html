@@ -229,13 +229,31 @@
         />
 
         <label for="phone" hidden>Phone number</label>
-        <input
-          class="consultations-form-input input-tel"
-          type="tel"
-          name="contact_tel"
-          id="phone"
-          placeholder="+380"
-        />
+
+        <div class="phone-select-container">
+          <div class="select">
+            <button class="select-btn">
+              <img class="select-btn-img" src="images/flag-ukraine.svg" alt="ukraine" />
+              <img class="arrow" src="images/select_arrow-down.svg" alt="Arrow" />
+            </button>
+            <ul class="dropdown">
+              <li data-value="+380" data-img="images/flag-ukraine.svg">
+                <img src="images/flag-ukraine.svg" alt="Ukraine" />
+              </li>
+              <li data-value="+44" data-img="images/flag-uk.svg">
+                <img src="images/flag-uk.svg" alt="UK" />
+              </li>
+            </ul>
+          </div>
+
+          <input
+            class="consultations-form-input input-tel"
+            type="tel"
+            name="contact_tel"
+            id="phone"
+            placeholder="+380"
+          />
+        </div>
 
         <button class="consultation-form-btn" type="submit">Отримати консультацію</button>
       </form>
