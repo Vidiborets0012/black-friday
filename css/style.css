@@ -559,8 +559,8 @@ input::placeholder {
   overflow: visible;
   white-space: nowrap;
   position: absolute;
-  /* top: 540px;
-  left: -100%; */
+  top: 160px;
+  left: -100%;
 }
 
 .ticker-red {
@@ -570,9 +570,19 @@ input::placeholder {
   overflow: visible;
   white-space: nowrap;
   position: absolute;
-  /* top: -310px;
-  left: -100%; */
+  top: -95px;
+  left: -100%;
 }
+
+/* .ticker-yellow {
+    top: 160px;
+    left: -100%;
+  }
+
+  .ticker-red {
+    top: -95px;
+    left: -100%;
+  } */
 
 .consultation-slider {
   display: flex;
@@ -762,7 +772,7 @@ small {
     gap: 30px;
   }
 
-  .ticker-yellow {
+  /* .ticker-yellow {
     top: 160px;
     left: -100%;
   }
@@ -770,7 +780,7 @@ small {
   .ticker-red {
     top: -95px;
     left: -100%;
-  }
+  } */
 }
 
 @media screen and (max-width: 1100px) {

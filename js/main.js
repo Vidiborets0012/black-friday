@@ -54,3 +54,10 @@ document.addEventListener('click', () => {
   dropdown.style.display = 'none';
   selectButton.classList.remove('open');
 });
+
+const slider = document.querySelector('.consultation-slider');
+const clone = slider.cloneNode(true);
+slider.parentElement.appendChild(clone);
+
+const tickerRed = document.querySelector('.ticker-red');
+tickerRed.innerHTML += tickerRed.innerHTML; // Дублюємо текст
