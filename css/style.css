@@ -376,6 +376,10 @@ p {
 
 /* ********** consultations ********** */
 
+.consultations {
+  position: relative;
+}
+
 .consultation-title {
   font-weight: 900;
   font-size: 70px;
@@ -388,12 +392,22 @@ p {
   color: #ffd000;
 }
 
+.consultations-bg-inner {
+  position: absolute;
+  left: 500px;
+  top: 88px;
+  width: 602px;
+  min-height: 468px;
+  background-image: url('../images/cons-bg.png');
+  background-repeat: no-repeat;
+}
+
 .consultation-form {
   width: 415px;
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding-bottom: 365px;
+  padding-bottom: 116px;
 }
 
 .consultations-form-input {
