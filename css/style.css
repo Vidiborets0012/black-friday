@@ -536,6 +536,108 @@ input::placeholder {
   background-color: #01132b;
 }
 
+.slider-wrapper {
+  position: relative;
+  min-height: 257px;
+}
+.consultation-ticker {
+  position: absolute;
+  height: 80px;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  box-shadow: inset 0 0 11px 0 rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+}
+
+.ticker-yellow {
+  background-color: #ffd000;
+  transform: rotate(7deg);
+  z-index: 10;
+  overflow: visible;
+  white-space: nowrap;
+  position: absolute;
+  /* top: 540px;
+  left: -100%; */
+}
+
+.ticker-red {
+  background-color: #e50103;
+  transform: rotate(-4deg);
+  z-index: 9;
+  overflow: visible;
+  white-space: nowrap;
+  position: absolute;
+  /* top: -310px;
+  left: -100%; */
+}
+
+.consultation-slider {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  will-change: transform;
+}
+
+.slider-item {
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.black {
+  color: #000;
+}
+
+.yellow {
+  color: #ffd000;
+}
+
+.red {
+  color: #e50103;
+}
+
+.slider-item:nth-child(odd) {
+  background-color: transparent;
+  width: 237px;
+}
+
+.slider-item:nth-child(even) {
+  background-color: #000;
+  width: 255px;
+}
+
+.ticker-yellow .consultation-slider {
+  animation: scroll-yellow 15s linear infinite;
+}
+
+.ticker-red .consultation-slider {
+  animation: scroll-red 20s linear infinite;
+}
+
+@keyframes scroll-yellow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-red {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /* ********** footer ********** */
 
 footer {
@@ -658,6 +760,16 @@ small {
   .specialties-items {
     justify-content: center;
     gap: 30px;
+  }
+
+  .ticker-yellow {
+    top: 160px;
+    left: -100%;
+  }
+
+  .ticker-red {
+    top: -95px;
+    left: -100%;
   }
 }
 
