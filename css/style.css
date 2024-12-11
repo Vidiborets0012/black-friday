@@ -376,13 +376,6 @@ p {
 
 /* ********** consultations ********** */
 
-/* .consultations {
-  background-image: url('../images/cons-arrow-ellow.svg'), url('../images/cons-arrow-red.svg'),
-    url('../images/cons-bg.svg');
-  background-repeat: no-repeat;
-  background-position: center bottom 74px, center bottom 14px, right 79px top 88px;
-} */
-
 .consultation-title {
   font-weight: 900;
   font-size: 70px;
@@ -442,6 +435,12 @@ input::placeholder {
   color: currentColor;
   padding: 17px 17px 19px;
   margin: 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.consultation-form-btn:hover {
+  background-color: #e50103;
 }
 
 .phone-select-container {
