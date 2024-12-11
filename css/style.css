@@ -515,7 +515,7 @@ input::placeholder {
   backdrop-filter: blur(12.098480224609375px);
   border-radius: 5px;
   display: none;
-  z-index: 10;
+  z-index: 50;
 }
 
 .dropdown li {
@@ -538,10 +538,17 @@ input::placeholder {
 
 .slider-wrapper {
   position: relative;
-  min-height: 257px;
+  width: 100%;
+  min-height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 247px;
 }
+
 .consultation-ticker {
   position: absolute;
+  overflow: hidden;
   height: 80px;
   font-weight: 800;
   font-size: 30px;
@@ -556,33 +563,23 @@ input::placeholder {
   background-color: #ffd000;
   transform: rotate(7deg);
   z-index: 10;
-  overflow: visible;
   white-space: nowrap;
   position: absolute;
-  top: 160px;
-  left: -100%;
+  top: -10px;
+  left: -10px;
+  right: -10px;
 }
 
 .ticker-red {
   background-color: #e50103;
   transform: rotate(-4deg);
   z-index: 9;
-  overflow: visible;
   white-space: nowrap;
   position: absolute;
-  top: -95px;
-  left: -100%;
+  top: 0;
+  left: -10px;
+  right: -10px;
 }
-
-/* .ticker-yellow {
-    top: 160px;
-    left: -100%;
-  }
-
-  .ticker-red {
-    top: -95px;
-    left: -100%;
-  } */
 
 .consultation-slider {
   display: flex;
@@ -771,16 +768,6 @@ small {
     justify-content: center;
     gap: 30px;
   }
-
-  /* .ticker-yellow {
-    top: 160px;
-    left: -100%;
-  }
-
-  .ticker-red {
-    top: -95px;
-    left: -100%;
-  } */
 }
 
 @media screen and (max-width: 1100px) {
