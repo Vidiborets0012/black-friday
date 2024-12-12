@@ -663,6 +663,15 @@ footer {
 
 .footer-inner {
   display: flex;
+}
+
+.common-information-inner {
+  margin-right: 117px;
+}
+
+.links-inner {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -671,17 +680,16 @@ footer {
 }
 
 .common-information .logo {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .footer-text {
-  font-style: 20px;
+  font-size: 20px;
   margin-bottom: 76px;
 }
 
-small {
-  display: block;
-  font-size: 13px;
+.footer-text-small {
+  font-size: 12px;
   line-height: 14px;
 }
 
@@ -691,25 +699,51 @@ small {
 
 .contacts-link {
   display: block;
+  color: #fff;
   background-repeat: no-repeat;
   padding: 5px 0 5px 50px;
   margin-bottom: 14px;
+  transition: color 0.3s ease;
+}
+
+.contacts-link:hover {
+  color: #ffe000;
 }
 
 .tel {
   background-image: url('../images/footer-phone.svg');
+  transition: background-image 0.3s ease;
+}
+
+.tel:hover {
+  background-image: url('../images/footer-phone_carbon.svg');
 }
 
 .site {
   background-image: url('../images/footer-www.svg');
+  transition: background-image 0.3s ease;
+}
+
+.site:hover {
+  background-image: url('../images/footer-www_carbon.svg');
 }
 
 .tg {
   background-image: url('../images/footer-la_telegram.svg');
+  transition: background-image 0.3s ease;
+}
+
+.tg:hover {
+  background-image: url('../images/footer-la_telegram_carbon.svg');
 }
 
 .email {
   background-image: url('../images/footer-mail.svg');
+  transition: background-image 0.3s ease;
+}
+
+.email:hover {
+  background-image: url('../images/footer-mail_carbon.svg');
 }
 
 .footer-social {
@@ -729,22 +763,47 @@ small {
 
 .instagram {
   background-image: url('../images/social-instagram.svg');
+  transition: background-image 0.3s ease;
+}
+
+.instagram:hover {
+  background-image: url('../images/social-instagram_carbon.svg');
 }
 
 .facebook {
   background-image: url('../images/social-facebook.svg');
+  transition: background-image 0.3s ease;
+}
+
+.facebook:hover {
+  background-image: url('../images/social-facebook_carbon.svg');
 }
 
 .youtube {
   background-image: url('../images/social-youtube.svg');
+  transition: background-image 0.3s ease;
+}
+
+.youtube:hover {
+  background-image: url('../images/social-youtube_carbon.svg');
 }
 
 .linkedin {
   background-image: url('../images/social-linkedin.svg');
+  transition: background-image 0.3s ease;
+}
+
+.linkedin:hover {
+  background-image: url('../images/social-linkedin_carbon.svg');
 }
 
 .telegram {
   background-image: url('../images/social-telegram.svg');
+  transition: background-image 0.3s ease;
+}
+
+.telegram:hover {
+  background-image: url('../images/social-telegram_carbon.svg');
 }
 
 .arrow-to-top {
@@ -753,7 +812,11 @@ small {
   margin-left: auto;
   margin-top: 74px;
   display: block;
-  background-image: url(../images/footer-arrow.svg);
+  background-image: url(../images/footer-arrow-up.png);
+}
+
+.arrow-to-top:hover {
+  background-image: url(../images/footer-arrow-up_carbon.png);
 }
 
 @media screen and (max-width: 1199px) {
@@ -811,6 +874,37 @@ small {
 
   .consultation-form {
     margin: 0 auto;
+  }
+
+  .footer-inner {
+    display: block;
+  }
+
+  .common-information-inner {
+    margin: 0;
+  }
+
+  .common-information {
+    width: 520px;
+    margin: 0 auto 40px;
+  }
+
+  .common-information .logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-text {
+    margin-bottom: 30px;
+  }
+
+  .footer-text-small {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .links-inner {
+    justify-content: center;
+    gap: 30px;
   }
 }
 
@@ -990,6 +1084,39 @@ small {
   .consultation-title {
     font-size: 40px;
   }
+
+  .common-information {
+    width: 415px;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  .footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  .footer-title {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .footer-social-list {
+    width: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .arrow-to-top {
+    margin-left: auto;
+    margin-top: auto;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -1065,5 +1192,18 @@ small {
   .consultation-form-btn {
     line-height: 1;
     padding: 12px 17px 12px;
+  }
+
+  .common-information {
+    width: 286px;
+  }
+
+  .links-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social {
+    width: 286px;
   }
 }
