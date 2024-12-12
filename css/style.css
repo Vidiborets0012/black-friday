@@ -663,6 +663,15 @@ footer {
 
 .footer-inner {
   display: flex;
+}
+
+.common-information-inner {
+  margin-right: 117px;
+}
+
+.links-inner {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -671,17 +680,16 @@ footer {
 }
 
 .common-information .logo {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .footer-text {
-  font-style: 20px;
+  font-size: 20px;
   margin-bottom: 76px;
 }
 
-small {
-  display: block;
-  font-size: 13px;
+.footer-text-small {
+  font-size: 12px;
   line-height: 14px;
 }
 
@@ -691,6 +699,7 @@ small {
 
 .contacts-link {
   display: block;
+  color: #fff;
   background-repeat: no-repeat;
   padding: 5px 0 5px 50px;
   margin-bottom: 14px;
@@ -865,6 +874,37 @@ small {
 
   .consultation-form {
     margin: 0 auto;
+  }
+
+  .footer-inner {
+    display: block;
+  }
+
+  .common-information-inner {
+    margin: 0;
+  }
+
+  .common-information {
+    width: 520px;
+    margin: 0 auto 40px;
+  }
+
+  .common-information .logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-text {
+    margin-bottom: 30px;
+  }
+
+  .footer-text-small {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .links-inner {
+    justify-content: center;
+    gap: 30px;
   }
 }
 
@@ -1044,6 +1084,39 @@ small {
   .consultation-title {
     font-size: 40px;
   }
+
+  .common-information {
+    width: 415px;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  .footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  .footer-title {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .footer-social-list {
+    width: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .arrow-to-top {
+    margin-left: auto;
+    margin-top: auto;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -1119,5 +1192,18 @@ small {
   .consultation-form-btn {
     line-height: 1;
     padding: 12px 17px 12px;
+  }
+
+  .common-information {
+    width: 286px;
+  }
+
+  .links-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social {
+    width: 286px;
   }
 }
