@@ -834,6 +834,14 @@ footer {
 }
 
 @media screen and (max-width: 1100px) {
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .hero {
+    margin-bottom: 72px;
+  }
+
   .hero-inner {
     flex-direction: column;
     justify-content: center;
@@ -860,6 +868,14 @@ footer {
 
   .consultations-bg-inner {
     left: 420px;
+  }
+
+  .specialties {
+    margin-bottom: 72px;
+  }
+
+  .benefits {
+    margin-bottom: 72px;
   }
 }
 
@@ -953,6 +969,10 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
+  /* .sections-title {
+    margin: 0 auto 44px;
+  } */
+
   .menu-btn {
     display: inline-block;
     width: 30px;
@@ -1071,10 +1091,14 @@ footer {
     justify-content: center;
   }
 
+  .benefits {
+    margin-bottom: 50px;
+  }
+
   .sections-title {
     width: 426px;
     font-size: 60px;
-    margin: 0 auto 56px;
+    margin: 0 auto 44px;
   }
 
   .special-title {
@@ -1083,6 +1107,11 @@ footer {
 
   .consultation-title {
     font-size: 40px;
+    margin-bottom: 44px;
+  }
+
+  .slider-wrapper {
+    margin-bottom: 180px;
   }
 
   .common-information {
@@ -1117,6 +1146,10 @@ footer {
     margin-left: auto;
     margin-top: auto;
   }
+
+  .specialties {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -1126,6 +1159,14 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  .header {
+    margin-bottom: 24px;
+  }
+
+  .hero {
+    margin-bottom: 50px;
+  }
+
   .hero-title {
     width: 100%;
     text-align: center;
@@ -1162,6 +1203,7 @@ footer {
   .sections-title {
     width: 290px;
     font-size: 36px;
+    margin: 0 auto 32px;
   }
 
   .special-title {
