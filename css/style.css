@@ -697,53 +697,29 @@ footer {
   width: 286px;
 }
 
+.contacts-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
 .contacts-link {
-  display: block;
   color: #fff;
-  background-repeat: no-repeat;
-  padding: 5px 0 5px 50px;
+}
+
+.contacts-item:not(:last-child) {
   margin-bottom: 14px;
-  transition: color 0.3s ease;
 }
 
-.contacts-link:hover {
-  color: #ffe000;
+.contacts-item:hover {
+  stroke: #ffd000;
 }
 
-.tel {
-  background-image: url('../images/footer-phone.svg');
-  transition: background-image 0.3s ease;
-}
-
-.tel:hover {
-  background-image: url('../images/footer-phone_carbon.svg');
-}
-
-.site {
-  background-image: url('../images/footer-www.svg');
-  transition: background-image 0.3s ease;
-}
-
-.site:hover {
-  background-image: url('../images/footer-www_carbon.svg');
-}
-
-.tg {
-  background-image: url('../images/footer-la_telegram.svg');
-  transition: background-image 0.3s ease;
-}
-
-.tg:hover {
-  background-image: url('../images/footer-la_telegram_carbon.svg');
-}
-
-.email {
-  background-image: url('../images/footer-mail.svg');
-  transition: background-image 0.3s ease;
-}
-
-.email:hover {
-  background-image: url('../images/footer-mail_carbon.svg');
+.contacts-item:hover .contacts-link {
+  color: #ffd000;
 }
 
 .footer-social {
@@ -759,51 +735,12 @@ footer {
   display: block;
   width: 32px;
   height: 32px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
-.instagram {
-  background-image: url('../images/social-instagram.svg');
-  transition: background-image 0.3s ease;
-}
-
-.instagram:hover {
-  background-image: url('../images/social-instagram_carbon.svg');
-}
-
-.facebook {
-  background-image: url('../images/social-facebook.svg');
-  transition: background-image 0.3s ease;
-}
-
-.facebook:hover {
-  background-image: url('../images/social-facebook_carbon.svg');
-}
-
-.youtube {
-  background-image: url('../images/social-youtube.svg');
-  transition: background-image 0.3s ease;
-}
-
-.youtube:hover {
-  background-image: url('../images/social-youtube_carbon.svg');
-}
-
-.linkedin {
-  background-image: url('../images/social-linkedin.svg');
-  transition: background-image 0.3s ease;
-}
-
-.linkedin:hover {
-  background-image: url('../images/social-linkedin_carbon.svg');
-}
-
-.telegram {
-  background-image: url('../images/social-telegram.svg');
-  transition: background-image 0.3s ease;
-}
-
-.telegram:hover {
-  background-image: url('../images/social-telegram_carbon.svg');
+.social-link:hover {
+  stroke: #ffd000;
 }
 
 .arrow-to-top {
@@ -813,6 +750,8 @@ footer {
   margin-top: 74px;
   display: block;
   background-image: url(../images/footer-arrow-up.png);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
 .arrow-to-top:hover {
